@@ -1,0 +1,35 @@
+{
+  "name": "outbuyme-com",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "nuxt typecheck",
+    "verify": "npm run typecheck && npm test && npm run build",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^4.5.2",
+    "stripe": "^22.5.0",
+    "vue": "^3.5.41",
+    "vue-router": "^5.2.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils": "^4.1.0",
+    "@vue/test-utils": "^2.4.11",
+    "happy-dom": "^20.11.6",
+    "playwright-core": "^1.62.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11",
+    "vue-tsc": "^3.3.11"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
