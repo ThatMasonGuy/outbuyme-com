@@ -7,6 +7,7 @@ const links = [
   { to: '/history', label: 'History' },
   { to: '/rules', label: 'Rules' },
   { to: '/report', label: 'Report' },
+  { to: '/login', label: 'Log in' },
 ]
 </script>
 
@@ -40,6 +41,6 @@ const links = [
 .mobile-nav nav a { min-height: 44px; border-bottom: 1px dashed #aaa394; padding: 0.75rem; font-weight: 900; text-decoration: none; }
 .mobile-nav nav a:last-child { border-bottom: 0; }
 .mobile-nav nav a:hover, .mobile-nav nav a:focus-visible { background: #ffe2f1; }
-@media (max-width: 790px) { .desktop-nav { display: none; } .mobile-nav { display: block; } }
+@media (max-width: 920px) { .desktop-nav { display: none; } .mobile-nav { display: block; } }
 @media (prefers-reduced-motion: reduce) { .desktop-nav a::after, .mobile-nav summary span { transition: none; } }
 </style>

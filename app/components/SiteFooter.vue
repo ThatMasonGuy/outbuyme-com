@@ -11,6 +11,7 @@
       <NuxtLink to="/history">History</NuxtLink>
       <NuxtLink to="/rules">Rules</NuxtLink>
       <NuxtLink to="/report">Report content</NuxtLink>
+      <NuxtLink to="/login">Log in</NuxtLink>
     </nav>
     <p class="site-footer__note">One page. One owner. Until somebody pays more.</p>
   </footer>

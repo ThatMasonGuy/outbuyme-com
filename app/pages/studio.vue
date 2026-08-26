@@ -213,6 +213,7 @@ useSeoMeta({ title: 'Make your page — Outbuy Me', description: 'Create a promo
           <p class="eyebrow">Make it before you buy it</p>
           <h1 id="studio-choice-title" tabindex="-1">What are you putting up?</h1>
           <p class="choice__lead">Start a draft now. You only pay when you’re ready to put it live.</p>
+          <p class="draft-lifecycle-note">If somebody outbuys you later, that version freezes in history and an editable copy comes back here as a draft.</p>
           <p v-if="draftRestored" class="restored-note">✓ A saved draft is waiting on this device.</p>
         </div>
         <div class="choice__options">
@@ -319,6 +320,7 @@ useSeoMeta({ title: 'Make your page — Outbuy Me', description: 'Create a promo
 .choice__intro { max-width: 62rem; }
 .choice__intro h1, .workspace__heading h1 { margin: 0.35rem 0 0.8rem; font-family: var(--font-display); font-size: clamp(2.8rem, 7vw, 6.5rem); letter-spacing: -0.045em; line-height: 0.96; }
 .choice__lead { max-width: 48rem; margin: 0; font-size: clamp(1rem, 1.8vw, 1.25rem); line-height: 1.5; }
+.draft-lifecycle-note { width: fit-content; max-width: 50rem; border-bottom: 0.45rem solid rgba(233,255,104,.8); margin: 0.75rem 0 0; font-family: var(--font-hand); line-height: 1.35; }
 .restored-note { width: fit-content; border-bottom: 0.45rem solid rgba(233,255,104,.8); margin-top: 1rem !important; font-family: var(--font-hand); font-size: 0.95rem !important; }
 .choice__options { display: grid; gap: 1.5rem; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .choice-card { position: relative; display: grid; min-height: 22rem; align-content: start; border: var(--line); border-radius: var(--radius); background: white; box-shadow: var(--shadow); gap: 0.8rem; padding: clamp(1.2rem, 3vw, 2rem); text-align: left; transition: transform 130ms ease, box-shadow 130ms ease; }

@@ -28,12 +28,12 @@ useHead({ link: [{ rel: 'canonical', href: 'https://outbuyme.com/about' }] })
 
       <section class="price-story" aria-labelledby="price-story-title">
         <div>
-          <p class="eyebrow">The price only moves one way</p>
+          <p class="eyebrow">The price has a floor</p>
           <h2 id="price-story-title">Someone will always want to write over you.</h2>
-          <p>The first takeover costs $1 USD. The next costs $5. After that, the price rises by $5 every time the page changes hands.</p>
+          <p>Takeovers start at $5 USD. Every successful takeover pushes the price up. When price decay arrives, it may drift down while the page sits—but never below $5.</p>
         </div>
-        <div class="price-notes" aria-label="The price starts at one dollar, moves to five dollars, then rises by five dollars each time">
-          <span>$1<small>first</small></span><i aria-hidden="true">→</i><span>$5<small>next</small></span><i aria-hidden="true">→</i><span>+$5<small>each time</small></span>
+        <div class="price-notes" aria-label="The public price starts at five dollars, rises after a takeover and never falls below five dollars">
+          <span>$5<small>floor</small></span><i aria-hidden="true">→</i><span>+$5<small>outbought</small></span><i aria-hidden="true">→</i><span>$5<small>minimum</small></span>
         </div>
       </section>
 
@@ -58,7 +58,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://outbuyme.com/about' }] })
       <section class="kept" aria-labelledby="kept-title">
         <span class="kept__scribble" aria-hidden="true">nothing gets binned</span>
         <div><p class="eyebrow">After you get outbought</p><h2 id="kept-title">Your page moves into history.</h2></div>
-        <p>Every finished page gets its own permanent place in the archive. The live page changes; the story of who held it does not disappear.</p>
+        <p>Finished pages move into the archive. Former owners can ask us to remove their page and public owner details; the takeover still remains part of the count.</p>
         <NuxtLink class="button button--paper" to="/history">Open the archive</NuxtLink>
       </section>
       </main>

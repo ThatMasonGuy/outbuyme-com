@@ -8,12 +8,13 @@ This repository is the Nuxt 4/TypeScript foundation for `outbuyme.com`.
 
 - Public unclaimed-page prototype with permanent takeover chrome
 - Always-available owner studio with two publishing paths
-- Floating promo postcard with an editable link list
-- Block-based page builder with movable text, image and link items
-- Permanent archive routes for previous page snapshots
+- Floating promo postcard with an editable link list and headline sizing
+- Direct-manipulation page builder with resizable text, images, buttons, handwriting, highlighters and shapes
+- Immutable archive snapshots with owner-requested public removal notices
+- Login and account-creation screens ready for the authentication service
 - Server-validated content schemas and URL restrictions
 - Indexable product, history and rules routes
-- No-index owner studio and reporting route
+- No-index owner studio, authentication, removal-request and reporting routes
 - Stripe and Firebase configuration placeholders
 
 Payment, authentication, persistent publishing, asset storage and operational reporting are intentionally not represented as complete. See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).

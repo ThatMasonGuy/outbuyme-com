@@ -29,7 +29,7 @@ useHead({
 <template>
   <div class="index-page-root">
     <a class="skip-link" href="#main-content">Skip to the page</a>
-    <TakeoverChrome price="$1 USD" owner-label="Unclaimed" status-label="Current owner">
+    <TakeoverChrome price="$5 USD" owner-label="Unclaimed" status-label="Current owner">
       <HomeCanvas />
     </TakeoverChrome>
   </div>

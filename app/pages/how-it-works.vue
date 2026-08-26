@@ -15,7 +15,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://outbuyme.com/how-it-works' }
   >
     <ol class="game-steps">
       <li><span>01</span><div><strong>Make a draft</strong><p>Use the quick promo or build the page yourself. Drafting is free.</p></div></li>
-      <li><span>02</span><div><strong>Put it live</strong><p>Pay the displayed price. The first takeover costs $1 USD.</p></div></li>
+      <li><span>02</span><div><strong>Put it live</strong><p>Pay the displayed price. Public takeovers start at $5 USD.</p></div></li>
       <li><span>03</span><div><strong>Hold the page</strong><p>Change it whenever you like, until somebody completes the next takeover.</p></div></li>
     </ol>
 
@@ -29,7 +29,7 @@ useHead({ link: [{ rel: 'canonical', href: 'https://outbuyme.com/how-it-works' }
     <p><strong>Quick promo</strong> gives you a postcard with a photo, a message and your links. <strong>Build a page</strong> gives you a blank canvas for text, images and links. You can switch between them while you own the page.</p>
 
     <h2>What happens when you lose it?</h2>
-    <p>Your finished page moves into the public archive with its takeover number and price. The new owner gets the live page; your old page still has a permanent place to visit and share.</p>
+    <p>Your finished page moves into the public archive with its takeover number and price. The new owner gets the live page. You can leave your old page public or request its removal.</p>
 
     <div class="page-actions"><NuxtLink class="button" to="/studio">Start a free draft</NuxtLink><NuxtLink to="/history">Browse the archive</NuxtLink></div>
   </ContentPage>

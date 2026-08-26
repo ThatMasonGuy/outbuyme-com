@@ -9,7 +9,7 @@
 - `/history/founding-page`
 - `/rules`
 
-The owner studio is `noindex, nofollow`. Reporting is `noindex, follow`. Authentication, checkout and administration routes must also be excluded.
+The owner studio, login, account creation and archive-removal request routes are `noindex, nofollow`. Reporting is `noindex, follow`. Checkout and administration routes must also be excluded.
 
 ## Stable identity
 
@@ -27,7 +27,7 @@ Links are validated as public `http` or `https` destinations. URL reputation and
 
 ## History
 
-The public history begins with the preserved founding page, then lists every completed reign and links to an immutable page snapshot. Each paid snapshot records its takeover number, price, dates, owner label and exact published content. Snapshots remain subject to moderation and legal removal requirements; preservation does not mean unsafe content must stay publicly accessible.
+The public history begins with the preserved founding page, then lists every completed reign and links to an immutable page snapshot. Each paid snapshot records its takeover number, price, dates, owner label and exact published content. A removed snapshot becomes a minimal `noindex` notice: its place in the takeover sequence remains, but its content and former owner details are no longer public. Archive-removal request forms are never indexable.
 
 ## Launch work
 

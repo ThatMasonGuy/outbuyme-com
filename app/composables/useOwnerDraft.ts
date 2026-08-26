@@ -25,7 +25,7 @@ const defaultPromo = (): PromoCardContent => ({
   description: 'A launch, a profile, a joke or whatever you want people to see before the next person takes over.',
   avatarDataUrl: '',
   theme: 'pink',
-  headlineSize: 'medium',
+  headlineSize: 'small',
   links: [
     { id: 'promo-link-1', label: 'My website', url: 'https://example.com' },
     { id: 'promo-link-2', label: 'Follow me', url: 'https://x.com/' },

@@ -29,9 +29,11 @@ For a buyer who wants to publish immediately.
 
 For a buyer who wants the canvas.
 
-The v1 builder stores a page as movable blocks. Owners can add text, images and links from the toolbox, position and resize them, change their styles, and reorder overlapping items. Dragging has slider and button alternatives for keyboard and touch use. Later iterations can add shapes, responsive compositions and richer image controls without replacing the stored content envelope.
+The v1 builder stores a page as movable blocks. Owners can add display text, body text, handwriting, images, buttons, highlighter marks and shapes from the toolbox. Items move from the point where they are grabbed and resize from a visible canvas handle. Arrow keys move the selected item; Shift plus arrow keys resize it. Owners can also change styles, colours and overlapping order.
 
-Owners may switch between formats and update their published revision while they remain the current owner.
+Owners may switch between formats and update their published revision while they remain the current owner. When outbought, the published revision becomes an immutable archive snapshot and a separate editable copy returns to draft mode for a future takeover.
+
+Former owners can request removal of their archived page. Removal hides the page and public owner details without rewriting the takeover count or transaction record.
 
 ## Voice
 

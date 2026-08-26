@@ -5,18 +5,18 @@
     <div class="home-copy">
       <p class="eyebrow">One page · whoever pays most gets it</p>
       <h1>Make the page.<br><span class="highlighter">Own the moment.</span></h1>
-      <p class="home-lead">Build something first. When you’re happy with it, pay <strong>$1 USD</strong> to put it live. It stays yours until somebody pays more.</p>
+      <p class="home-lead">Build something first. When you’re happy with it, pay <strong>$5 USD</strong> to put it live. It stays yours until somebody pays more.</p>
       <div class="home-actions">
         <NuxtLink class="button" to="/studio">Make your page <span aria-hidden="true">→</span></NuxtLink>
         <NuxtLink to="/how-it-works">How it works</NuxtLink>
       </div>
     </div>
     <div class="bid-notes" aria-label="Takeover price path">
-      <span class="bid-note bid-note--past">Start<br><strong>$1</strong></span>
+      <span class="bid-note bid-note--past">Floor<br><strong>$5</strong></span>
       <span class="bid-arrow" aria-hidden="true">→</span>
-      <span class="bid-note">Next<br><strong>$5</strong></span>
+      <span class="bid-note">Outbuy<br><strong>+$5</strong></span>
       <span class="bid-arrow" aria-hidden="true">→</span>
-      <span class="bid-note bid-note--pink">Then<br><strong>+$5</strong></span>
+      <span class="bid-note bid-note--pink">Never below<br><strong>$5</strong></span>
     </div>
   </article>
 </template>

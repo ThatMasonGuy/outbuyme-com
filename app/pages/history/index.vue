@@ -7,9 +7,9 @@ const formatDate = (value: string) => new Intl.DateTimeFormat('en', { dateStyle:
 </script>
 
 <template>
-  <ContentPage accent="blue" eyebrow="The archive" title="The page changes. The old ones stay." lead="Every time somebody pays more, the page they replaced is sealed in the archive. Open any finished page and see it as it was left.">
+  <ContentPage accent="blue" eyebrow="The archive" title="The page changes. The old ones stay." lead="Every time somebody pays more, the page they replace moves into history. Former owners can ask us to remove an old page from public view.">
     <section class="current-page">
-      <div><p class="eyebrow">Live now</p><h2>Waiting for owner #1</h2><p>The page is unclaimed. The first takeover costs $1 USD.</p></div>
+      <div><p class="eyebrow">Live now</p><h2>Waiting for owner #1</h2><p>The page is unclaimed. Public takeovers start at $5 USD.</p></div>
       <NuxtLink class="button" to="/">See the current page</NuxtLink>
     </section>
     <section aria-labelledby="past-pages-title">
@@ -17,12 +17,12 @@ const formatDate = (value: string) => new Intl.DateTimeFormat('en', { dateStyle:
       <ol class="history-list">
         <li class="history-list__founding">
           <NuxtLink to="/history/founding-page">
-            <span class="history-number">#0</span><strong>The founding page</strong><span>Before the first takeover</span><span>Started at $1 USD</span><span aria-hidden="true">Open page ↗</span>
+            <span class="history-number">#0</span><strong>The founding page</strong><span>Before the first takeover</span><span>Launch page</span><span aria-hidden="true">Open page ↗</span>
           </NuxtLink>
         </li>
         <li v-for="entry in historyEntries" :key="entry.slug">
           <NuxtLink :to="`/history/${entry.slug}`">
-            <span class="history-number">#{{ entry.takeoverNumber }}</span><strong>{{ entry.ownerName }}</strong><span>{{ formatDate(entry.startedAt) }}–{{ formatDate(entry.endedAt) }}</span><span>${{ entry.priceUsd }} USD</span><span aria-hidden="true">Open page ↗</span>
+            <span class="history-number">#{{ entry.takeoverNumber }}</span><strong>{{ entry.visibility === 'removed' ? 'Page removed' : entry.ownerName }}</strong><span>{{ formatDate(entry.startedAt) }}–{{ formatDate(entry.endedAt) }}</span><span>${{ entry.priceUsd }} USD</span><span aria-hidden="true">{{ entry.visibility === 'removed' ? 'View notice' : 'Open page' }} ↗</span>
           </NuxtLink>
         </li>
       </ol>
@@ -33,6 +33,7 @@ const formatDate = (value: string) => new Intl.DateTimeFormat('en', { dateStyle:
 
 <style scoped>
 .current-page { display: flex; align-items: center; justify-content: space-between; border: var(--line); background: #fff; box-shadow: var(--shadow); gap: 2rem; padding: clamp(1.2rem, 3vw, 2rem); }
+.current-page + section { padding-block: clamp(3rem, 7vw, 6rem) clamp(1rem, 3vw, 2rem); }
 .current-page h2 { margin: 0.25rem 0 !important; }
 .current-page p { margin: 0; }
 .history-list { display: grid; gap: 0.8rem; list-style: none; margin: 1.5rem 0 0; padding: 0; }
